@@ -251,10 +251,10 @@ a {
     height: 1200px;
     filter: drop-shadow(2px 4px 6px black);
     width: 700px; }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 664px) {
       /* line 17, templates/_hero.scss */
       .hero::before {
-        width: 993px; } }
+        width: auto; } }
 
 /* line 36, templates/_hero.scss */
 .header__site {

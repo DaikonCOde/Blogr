@@ -27,8 +27,8 @@
     height: 1200px;
     filter: drop-shadow(2px 4px 6px black);
     width: 700px;
-    @include media(desktop-s) {
-      width: 993px;
+    @include media(tablet) {
+      width: auto;
     }
   }
 }

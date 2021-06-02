@@ -5,7 +5,6 @@ let options = {
 }
 
 function ObserverObjec (element) {
-  console.log(element)
   element.forEach(e => {
     let target = e.target;
     if(e.isIntersecting) {
@@ -17,6 +16,7 @@ function ObserverObjec (element) {
 }
 
 const observer = new IntersectionObserver(ObserverObjec, options);
+
 elements.forEach(element => {
   observer.observe(element);
 })
