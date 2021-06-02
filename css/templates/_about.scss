@@ -1,0 +1,59 @@
+.about {
+  @extend .style-content;
+  margin: 50px auto;
+  position: relative;
+  &-container {
+    @extend .d-flex;
+    @extend .max-w;
+    flex-direction: column;
+    @include media(desktop-s) {
+      flex-direction: row;
+    }
+  }
+  &-image,
+  &-image figure,
+  figure img,
+  figure source {
+    @extend .w;
+  }
+  &-image {
+    max-width: 400px;
+    margin: 0 auto;
+    @include media(desktop-s) {
+      width: 50%;
+      max-width: none;
+      height: 700px;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: -180px;
+      margin: 0;
+    }
+  }
+  &-description {
+    margin: 50px 0 0;
+    @include media(desktop-s) {
+      width: 50%;
+      margin: 0 0 0 auto;
+    }
+    &--features {
+      margin: 0 0 50px;
+    }
+    &--features h3,
+    &--tool h3 {
+      @extend .style-title;
+      color: $dark-blue;
+      @include media(desktop-s) {
+        text-align: start;
+      }
+    }
+    &--features p,
+    &--tool p {
+      @include media(desktop-s) {
+        text-align: start;
+      }
+      @extend .style-text;
+      color: $dark-gray-blue;
+    }
+  }
+}

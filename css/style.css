@@ -1,0 +1,568 @@
+/* Media Queries Mixin
+**********************/
+/* line 1, components/_components.scss */
+.style-content, .hero, .design, .art, .about, .footer {
+  padding: 30px 20px;
+  width: 100%;
+  min-width: 320px; }
+
+/* line 7, components/_components.scss */
+.style-title, .section__home--title h1, .design-header h2, .design-body--description .description-introduction h3,
+.design-body--description .description-managnent h3, .art-description h3, .about-description--features h3, .about-description--tool h3 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px; }
+
+/* line 15, components/_components.scss */
+.style-text, .section__home--title p, .design-body--description .description-introduction p,
+.design-body--description .description-managnent p, .art-description p, .about-description--features p, .about-description--tool p {
+  margin: 20px auto;
+  text-align: center;
+  color: #dedede;
+  line-height: 30px; }
+
+/* line 24, components/_components.scss */
+.style-button, .aside-navmenu-content .login-buttons .btn, .header__site--nav-tablet .nav-login .btn, .section__home--cta .btn {
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 30px;
+  width: fit-content;
+  min-width: fit-content;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  color: #ffffff;
+  display: inline-block; }
+
+/* line 36, components/_components.scss */
+.style-btn-light, .aside-navmenu-content .login-buttons .btn-light, .header__site--nav-tablet .nav-login .btn-light, .section__home--cta .btn-light {
+  background: #ffffff;
+  color: #ff525d; }
+  /* line 39, components/_components.scss */
+  .style-btn-light:hover, .aside-navmenu-content .login-buttons .btn-light:hover, .header__site--nav-tablet .nav-login .btn-light:hover, .section__home--cta .btn-light:hover {
+    background: #ff7a85;
+    color: #ffffff; }
+
+/* line 45, components/_components.scss */
+.style-btn-transparent, .header__site--nav-tablet .nav-login .btn-transparent, .section__home--cta .btn-transparent {
+  border: 1.5px solid #ffffff;
+  background: transparent; }
+  /* line 48, components/_components.scss */
+  .style-btn-transparent:hover, .header__site--nav-tablet .nav-login .btn-transparent:hover, .section__home--cta .btn-transparent:hover {
+    background-color: #ffffff;
+    border-color: transparent;
+    color: #ff7a85; }
+
+/* line 55, components/_components.scss */
+.style-btn-gradient, .aside-navmenu-content .login-buttons .btn-gradient {
+  background: linear-gradient(350deg, #ff3d54 0%, #ff8f70 100%); }
+  /* line 57, components/_components.scss */
+  .style-btn-gradient:hover, .aside-navmenu-content .login-buttons .btn-gradient:hover {
+    background: #ff7a85; }
+
+/* line 63, components/_components.scss */
+li {
+  list-style: none;
+  text-align: center; }
+
+/* line 67, components/_components.scss */
+a {
+  text-decoration: none;
+  color: #25252d; }
+
+/* line 71, components/_components.scss */
+.navmenu-active, .aside-navmenu-content .items-navmenu .item-navmenu #r-1:checked ~ .subitems-navmenu, .aside-navmenu-content .items-navmenu .item-navmenu #r-2:checked ~ .subitems-navmenu, .aside-navmenu-content .items-navmenu .item-navmenu #r-3:checked ~ .subitems-navmenu {
+  height: auto;
+  overflow: initial;
+  padding: 20px; }
+
+/* line 78, components/_components.scss */
+.w, .design-body--image, .design-body--image picture,
+.design-body--image picture img,
+.design-body--image picture source, .about-image, .about-image figure,
+.about figure img,
+.about figure source {
+  width: 100%; }
+
+/* line 81, components/_components.scss */
+.max-w, .hero-container, .section__home .container-section-home, .design-container, .art-container, .about-container, .footer-container {
+  max-width: 993px;
+  margin: 0 auto; }
+
+/* line 85, components/_components.scss */
+.d-flex, .header__site--nav-tablet .nav-menu, .header__site--nav-tablet .nav-login, .design-body, .about-container, .footer-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 90, components/_components.scss */
+.name-category, .aside-navmenu-content .items-navmenu .item-navmenu-name, .header__site--nav-tablet .nav-menu-category span, .footer-category-product .item-navmenu-name, .footer-category-company .item-navmenu-name, .footer-category-connect .item-navmenu-name {
+  color: #25252d;
+  margin: 0 auto 20px;
+  display: block;
+  width: fit-content;
+  position: relative; }
+
+/* line 97, components/_components.scss */
+.items-of-category, .aside-navmenu-content .items-navmenu .item-navmenu .subitems-navmenu, .footer-category-product .subitems-navmenu, .footer-category-company .subitems-navmenu, .footer-category-connect .subitems-navmenu {
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  height: 100%;
+  overflow: initial;
+  padding: 20px; }
+
+/* line 105, components/_components.scss */
+.transition, .header__site--nav-tablet .nav-menu-category span, .header__site--nav-tablet .nav-menu-category span::before, .header__site--nav-tablet .nav-menu-category ul, .header__site--nav-tablet .nav-menu-category ul li a, .footer-category-product .subitems-navmenu .subitem-navmenu a, .footer-category-company .subitems-navmenu .subitem-navmenu a, .footer-category-connect .subitems-navmenu .subitem-navmenu a {
+  transition: all 0.3s linear; }
+
+/* line 1, components/_navmenu.scss */
+.aside-navmenu {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 150px);
+  background: #ffffff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #00000040;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear; }
+  /* line 17, components/_navmenu.scss */
+  .aside-navmenu-content .items-navmenu .item-navmenu {
+    margin: 0 0 20px 0;
+    position: relative; }
+    /* line 22, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu-name::before {
+      content: "";
+      position: absolute;
+      right: -25px;
+      top: calc(50% - 6px);
+      width: 12px;
+      height: 12px;
+      background: url("../assets/icon-arrow-dark.svg") no-repeat center;
+      background-size: contain;
+      transform: rotate(0deg);
+      transition: all 0.3s linear; }
+    /* line 35, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu input[type="radio"] {
+      visibility: hidden;
+      position: absolute; }
+    /* line 40, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu .subitems-navmenu {
+      background: #dedede;
+      height: 0;
+      overflow: hidden;
+      padding: 0; }
+      /* line 46, components/_navmenu.scss */
+      .aside-navmenu-content .items-navmenu .item-navmenu .subitems-navmenu .subitem-navmenu:not(:last-child) {
+        margin: 0 0 20px; }
+    /* line 54, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu #r-1:checked + .item-navmenu-name::before {
+      transform: rotate(180deg); }
+    /* line 60, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu #r-2:checked + .item-navmenu-name::before {
+      transform: rotate(180deg); }
+    /* line 66, components/_navmenu.scss */
+    .aside-navmenu-content .items-navmenu .item-navmenu #r-3:checked + .item-navmenu-name::before {
+      transform: rotate(180deg); }
+  /* line 75, components/_navmenu.scss */
+  .aside-navmenu-content .login-buttons {
+    padding: 20px 0 0;
+    border-top: 1px solid #1f3f5b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    /* line 81, components/_navmenu.scss */
+    .aside-navmenu-content .login-buttons .btn {
+      margin: 5px auto;
+      padding: 15px 30px; }
+    /* line 86, components/_navmenu.scss */
+    .aside-navmenu-content .login-buttons .btn-light {
+      color: #1f3f5b; }
+
+/* line 98, components/_navmenu.scss */
+.active {
+  opacity: 1;
+  visibility: visible; }
+
+/* line 1, templates/_hero.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif; }
+
+/* line 8, templates/_hero.scss */
+.hero {
+  background: linear-gradient(350deg, #ff3d54 0%, #ff8f70 100%);
+  position: relative;
+  border-radius: 0 0 0 100px;
+  overflow: hidden; }
+  /* line 17, templates/_hero.scss */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -250px;
+    left: -80px;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/bg-pattern-intro.svg") no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    height: 1200px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: 700px; }
+    @media only screen and (min-width: 992px) {
+      /* line 17, templates/_hero.scss */
+      .hero::before {
+        width: 993px; } }
+
+/* line 36, templates/_hero.scss */
+.header__site {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  /* line 42, templates/_hero.scss */
+  .header__site--logo {
+    width: fit-content; }
+    /* line 44, templates/_hero.scss */
+    .header__site--logo a {
+      text-decoration: none; }
+      /* line 46, templates/_hero.scss */
+      .header__site--logo a img {
+        width: fit-content; }
+  /* line 51, templates/_hero.scss */
+  .header__site--nav-mobile {
+    width: 30px;
+    height: 18px; }
+    @media only screen and (min-width: 992px) {
+      /* line 51, templates/_hero.scss */
+      .header__site--nav-mobile {
+        display: none;
+        visibility: hidden; } }
+    /* line 58, templates/_hero.scss */
+    .header__site--nav-mobile span {
+      background: url("../assets/icon-hamburger.svg") no-repeat center;
+      background-size: contain;
+      display: block;
+      width: inherit;
+      height: inherit;
+      transition: all 0.3s linear; }
+    /* line 66, templates/_hero.scss */
+    .header__site--nav-mobile .nav-active {
+      background: url("../assets/icon-close.svg") no-repeat center; }
+  /* line 70, templates/_hero.scss */
+  .header__site--nav-tablet {
+    display: none;
+    width: 100%;
+    margin: 0 0 0 20px;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (min-width: 992px) {
+      /* line 70, templates/_hero.scss */
+      .header__site--nav-tablet {
+        display: flex; } }
+    /* line 81, templates/_hero.scss */
+    .header__site--nav-tablet .nav-menu-category {
+      position: relative;
+      margin: 0 20px; }
+      /* line 84, templates/_hero.scss */
+      .header__site--nav-tablet .nav-menu-category span {
+        margin: 0;
+        color: #dedede; }
+        /* line 89, templates/_hero.scss */
+        .header__site--nav-tablet .nav-menu-category span::before {
+          content: "";
+          position: absolute;
+          right: -20px;
+          top: calc(50% - 6px);
+          background: url("../assets/icon-arrow-light.svg") no-repeat center;
+          background-size: contain;
+          width: 12px;
+          height: 12px; }
+      /* line 101, templates/_hero.scss */
+      .header__site--nav-tablet .nav-menu-category ul {
+        position: absolute;
+        top: 20px;
+        padding: 20px;
+        width: 150px;
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px #00000030;
+        height: 0;
+        overflow: hidden;
+        padding: 0; }
+        /* line 114, templates/_hero.scss */
+        .header__site--nav-tablet .nav-menu-category ul li a {
+          color: #1f3f5b; }
+          /* line 117, templates/_hero.scss */
+          .header__site--nav-tablet .nav-menu-category ul li a:hover {
+            font-weight: 600; }
+        /* line 122, templates/_hero.scss */
+        .header__site--nav-tablet .nav-menu-category ul li:not(:last-child) {
+          margin: 0 0 15px; }
+      /* line 126, templates/_hero.scss */
+      .header__site--nav-tablet .nav-menu-category span:hover {
+        color: #ffffff;
+        text-decoration: underline; }
+      /* line 130, templates/_hero.scss */
+      .header__site--nav-tablet .nav-menu-category span:hover::before {
+        transform: rotate(180deg); }
+      /* line 133, templates/_hero.scss */
+      .header__site--nav-tablet .nav-menu-category span:hover + ul,
+      .header__site--nav-tablet .nav-menu-category ul:hover {
+        height: auto;
+        padding: 20px; }
+    /* line 145, templates/_hero.scss */
+    .header__site--nav-tablet .nav-login .btn-light {
+      margin: 0 0 0 10px; }
+    /* line 149, templates/_hero.scss */
+    .header__site--nav-tablet .nav-login .btn-transparent {
+      border: none; }
+
+/* line 157, templates/_hero.scss */
+.section__home {
+  margin: 100px auto;
+  padding: 0 20px;
+  position: relative; }
+  /* line 165, templates/_hero.scss */
+  .section__home--title h1 {
+    max-width: 285px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 992px) {
+      /* line 165, templates/_hero.scss */
+      .section__home--title h1 {
+        max-width: fit-content; } }
+  /* line 177, templates/_hero.scss */
+  .section__home--cta {
+    margin: 40px auto 0;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly; }
+    /* line 188, templates/_hero.scss */
+    .section__home--cta .btn-transparent {
+      margin: 0 0 0 10px; }
+
+/* line 1, templates/_design.scss */
+.design {
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (min-width: 992px) {
+    /* line 1, templates/_design.scss */
+    .design {
+      padding: 20px 0px 20px 20px; } }
+  /* line 13, templates/_design.scss */
+  .design-header h2 {
+    color: #1f3f5b; }
+  /* line 18, templates/_design.scss */
+  .design-body {
+    flex-direction: column; }
+    @media only screen and (min-width: 992px) {
+      /* line 18, templates/_design.scss */
+      .design-body {
+        flex-direction: row;
+        margin: 50px auto; } }
+    /* line 25, templates/_design.scss */
+    .design-body--image {
+      margin: 50px auto;
+      position: relative;
+      max-width: 400px; }
+      @media only screen and (min-width: 992px) {
+        /* line 25, templates/_design.scss */
+        .design-body--image {
+          order: 2;
+          max-width: none;
+          width: 50%;
+          height: 700px;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          right: -150px;
+          margin: 0; } }
+      /* line 41, templates/_design.scss */
+      .design-body--image picture,
+      .design-body--image picture img,
+      .design-body--image picture source {
+        height: auto; }
+    @media only screen and (min-width: 992px) {
+      /* line 48, templates/_design.scss */
+      .design-body--description {
+        order: 1;
+        width: 50%; } }
+    /* line 53, templates/_design.scss */
+    .design-body--description .description-introduction h3,
+    .design-body--description .description-managnent h3 {
+      color: #1f3f5b; }
+      @media only screen and (min-width: 992px) {
+        /* line 53, templates/_design.scss */
+        .design-body--description .description-introduction h3,
+        .design-body--description .description-managnent h3 {
+          text-align: start; } }
+    /* line 61, templates/_design.scss */
+    .design-body--description .description-introduction p,
+    .design-body--description .description-managnent p {
+      color: #4b5862; }
+      @media only screen and (min-width: 992px) {
+        /* line 61, templates/_design.scss */
+        .design-body--description .description-introduction p,
+        .design-body--description .description-managnent p {
+          text-align: start; } }
+    /* line 69, templates/_design.scss */
+    .design-body--description .description-introduction {
+      margin: 0 0 50px; }
+
+/* line 1, templates/_art.scss */
+.art {
+  position: relative;
+  margin: 150px 0 0;
+  background: linear-gradient(180deg, #2c2d3f 0%, #3f4164 100%);
+  border-radius: 0 100px 0 100px;
+  padding: 0; }
+  /* line 8, templates/_art.scss */
+  .art-container {
+    overflow: hidden;
+    position: relative; }
+  /* line 13, templates/_art.scss */
+  .art-mobiles {
+    position: absolute;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: -150px;
+    z-index: 2; }
+    @media only screen and (min-width: 992px) {
+      /* line 13, templates/_art.scss */
+      .art-mobiles {
+        width: 450px;
+        left: calc(25% - 225px);
+        top: -80px; } }
+    /* line 24, templates/_art.scss */
+    .art-mobiles img {
+      width: 100%; }
+  /* line 28, templates/_art.scss */
+  .art-overlay {
+    position: absolute;
+    top: -170px;
+    left: -70px;
+    width: 500px;
+    height: 500px;
+    background: url("../assets/bg-pattern-circles.svg") no-repeat center;
+    background-size: contain; }
+  /* line 38, templates/_art.scss */
+  .art-description {
+    margin: 150px auto 100px;
+    padding: 30px 20px;
+    position: relative; }
+    @media only screen and (min-width: 992px) {
+      /* line 38, templates/_art.scss */
+      .art-description {
+        padding: 50px 20px;
+        width: 50%;
+        margin: 0 0 0 auto; } }
+    @media only screen and (min-width: 992px) {
+      /* line 47, templates/_art.scss */
+      .art-description h3 {
+        text-align: start; } }
+    @media only screen and (min-width: 992px) {
+      /* line 53, templates/_art.scss */
+      .art-description p {
+        text-align: start; } }
+
+/* line 1, templates/_about.scss */
+.about {
+  margin: 50px auto;
+  position: relative; }
+  /* line 5, templates/_about.scss */
+  .about-container {
+    flex-direction: column; }
+    @media only screen and (min-width: 992px) {
+      /* line 5, templates/_about.scss */
+      .about-container {
+        flex-direction: row; } }
+  /* line 19, templates/_about.scss */
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 992px) {
+      /* line 19, templates/_about.scss */
+      .about-image {
+        width: 50%;
+        max-width: none;
+        height: 700px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: -180px;
+        margin: 0; } }
+  /* line 33, templates/_about.scss */
+  .about-description {
+    margin: 50px 0 0; }
+    @media only screen and (min-width: 992px) {
+      /* line 33, templates/_about.scss */
+      .about-description {
+        width: 50%;
+        margin: 0 0 0 auto; } }
+    /* line 39, templates/_about.scss */
+    .about-description--features {
+      margin: 0 0 50px; }
+    /* line 42, templates/_about.scss */
+    .about-description--features h3, .about-description--tool h3 {
+      color: #1f3f5b; }
+      @media only screen and (min-width: 992px) {
+        /* line 42, templates/_about.scss */
+        .about-description--features h3, .about-description--tool h3 {
+          text-align: start; } }
+    /* line 50, templates/_about.scss */
+    .about-description--features p, .about-description--tool p {
+      color: #4b5862; }
+      @media only screen and (min-width: 992px) {
+        /* line 50, templates/_about.scss */
+        .about-description--features p, .about-description--tool p {
+          text-align: start; } }
+
+/* line 1, templates/_footer.scss */
+.footer {
+  background: #25252d;
+  border-radius: 0 100px 0 0; }
+  /* line 5, templates/_footer.scss */
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (min-width: 664px) {
+      /* line 5, templates/_footer.scss */
+      .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 30px 0 0 0; } }
+  /* line 18, templates/_footer.scss */
+  .footer-logo {
+    margin: 50px auto; }
+    @media only screen and (min-width: 664px) {
+      /* line 18, templates/_footer.scss */
+      .footer-logo {
+        margin: 0 auto; } }
+    /* line 23, templates/_footer.scss */
+    .footer-logo a {
+      margin: 0 auto;
+      width: fit-content;
+      display: block; }
+  /* line 29, templates/_footer.scss */
+  .footer-category-product, .footer-category-company, .footer-category-connect {
+    margin: 0 auto 30px; }
+    /* line 33, templates/_footer.scss */
+    .footer-category-product .item-navmenu-name, .footer-category-company .item-navmenu-name, .footer-category-connect .item-navmenu-name {
+      color: #ffffff; }
+    /* line 40, templates/_footer.scss */
+    .footer-category-product .subitems-navmenu .subitem-navmenu a, .footer-category-company .subitems-navmenu .subitem-navmenu a, .footer-category-connect .subitems-navmenu .subitem-navmenu a {
+      color: #dedede;
+      font-size: 18px; }
+      /* line 44, templates/_footer.scss */
+      .footer-category-product .subitems-navmenu .subitem-navmenu a:hover, .footer-category-company .subitems-navmenu .subitem-navmenu a:hover, .footer-category-connect .subitems-navmenu .subitem-navmenu a:hover {
+        text-decoration: underline; }
+    /* line 49, templates/_footer.scss */
+    .footer-category-product .subitems-navmenu .subitem-navmenu:not(:last-child), .footer-category-company .subitems-navmenu .subitem-navmenu:not(:last-child), .footer-category-connect .subitems-navmenu .subitem-navmenu:not(:last-child) {
+      margin: 0 0 20px; }

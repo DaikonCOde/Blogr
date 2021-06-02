@@ -1,0 +1,74 @@
+.design {
+  @extend .style-content;
+  @include media(desktop-s) {
+    padding: 20px 0px 20px 20px;
+  }
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  &-container {
+    @extend .max-w;
+  }
+  &-header {
+    h2 {
+      @extend .style-title;
+      color: $dark-blue;
+    }
+  }
+  &-body {
+    @extend .d-flex;
+    flex-direction: column;
+    @include media(desktop-s) {
+      flex-direction: row;
+      margin: 50px auto;
+    }
+    &--image {
+      @extend .w;
+      margin: 50px auto;
+      position: relative;
+      max-width: 400px;
+      @include media(desktop-s) {
+        order: 2;
+        max-width: none;
+        width: 50%;
+        height: 700px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: -150px;
+        margin: 0;
+      }
+      picture,
+      picture img,
+      picture source {
+        @extend .w;
+        height: auto;
+      }
+    }
+    &--description {
+      @include media(desktop-s) {
+        order: 1;
+        width: 50%;
+      }
+      .description-introduction h3,
+      .description-managnent h3 {
+        @extend .style-title;
+        @include media(desktop-s) {
+          text-align: start;
+        }
+        color: $dark-blue;
+      }
+      .description-introduction p,
+      .description-managnent p {
+        @extend .style-text;
+        @include media(desktop-s) {
+          text-align: start;
+        }
+        color: $dark-gray-blue;
+      }
+      .description-introduction {
+        margin: 0 0 50px;
+      }
+    }
+  }
+}

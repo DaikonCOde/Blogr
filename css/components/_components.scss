@@ -1,0 +1,107 @@
+.style-content {
+  padding: 30px 20px;
+  width: 100%;
+  min-width: 320px;
+}
+
+.style-title {
+  text-align: center;
+  color: $color-text;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.style-text {
+  margin: 20px auto;
+  text-align: center;
+  color: $color-text-gray;
+  line-height: 30px;
+}
+
+// BUTTONS
+
+.style-button {
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 30px;
+  width: fit-content;
+  min-width: fit-content;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  color: $color-text;
+  display: inline-block;
+}
+
+.style-btn-light {
+  background: $color-text;
+  color: $light-red;
+  &:hover {
+    background: $light-red-hover;
+    color: $color-text;
+  }
+}
+
+.style-btn-transparent {
+  border: 1.5px solid $color-text;
+  background: transparent;
+  &:hover {
+    background-color: $color-text;
+    border-color: transparent;
+    color: $light-red-hover;
+  }
+}
+
+.style-btn-gradient {
+  background: $gradient-cta;
+  &:hover {
+    background: $light-red-hover;
+  }
+}
+
+// NAV MENU
+li {
+  list-style: none;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: $dark-black-blue;
+}
+.navmenu-active {
+  height: auto;
+  overflow: initial;
+  padding: 20px;
+}
+
+// FEAUTERS
+.w {
+  width: 100%;
+}
+.max-w {
+  max-width: 993px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-category {
+  color: $dark-black-blue;
+  margin: 0 auto 20px;
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+.items-of-category {
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  height: 100%;
+  overflow: initial;
+  padding: 20px;
+}
+
+.transition {
+  transition: all 0.3s linear;
+}

@@ -1,0 +1,31 @@
+// COLORS
+$light-red: #ff525d; // CTA text
+$light-red-hover: #ff7a85; // CTA hover
+$dark-blue: #1f3f5b; // headings
+
+// NEUTRAL
+
+$color-text: #ffffff; // color text
+$color-text-gray: #dedede;
+$gray-blue: #c8c8cb; //footer text
+
+$dark-gray-blue: #4b5862; // body
+$dark-black-blue: #25252d; // background footer
+
+// GRADIENTS
+
+$gradient-cta: linear-gradient(
+  350deg,
+  rgba(255, 61, 84, 1) 0%,
+  rgba(255, 143, 112, 1) 100%
+);
+$gradient-body: linear-gradient(
+  180deg,
+  rgba(44, 45, 63, 1) 0%,
+  rgba(63, 65, 100, 1) 100%
+);
+
+// TYPOGRAPHYS
+
+$font-primary: "Overpass", sans-serif;
+$font-secondary: "Ubuntu", sans-serif;

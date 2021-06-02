@@ -1,0 +1,60 @@
+.art {
+  position: relative;
+  margin: 150px 0 0;
+  background: $gradient-body;
+  border-radius: 0 100px 0 100px;
+  @extend .style-content;
+  padding: 0;
+  &-container {
+    @extend .max-w;
+    overflow: hidden;
+    position: relative;
+  }
+  &-mobiles {
+    position: absolute;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: -150px;
+    z-index: 2;
+    @include media(desktop-s) {
+      width: 450px;
+      left: calc(25% - 225px);
+      top: -80px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-overlay {
+    position: absolute;
+    top: -170px;
+    left: -70px;
+    width: 500px;
+    height: 500px;
+    background: url("../assets/bg-pattern-circles.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &-description {
+    margin: 150px auto 100px;
+    padding: 30px 20px;
+    position: relative;
+    @include media(desktop-s) {
+      padding: 50px 20px;
+      width: 50%;
+      margin: 0 0 0 auto;
+    }
+    h3 {
+      @extend .style-title;
+      @include media(desktop-s) {
+        text-align: start;
+      }
+    }
+    p {
+      @extend .style-text;
+      @include media(desktop-s) {
+        text-align: start;
+      }
+    }
+  }
+}

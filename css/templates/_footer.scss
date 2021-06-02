@@ -1,0 +1,54 @@
+.footer {
+  @extend .style-content;
+  background: $dark-black-blue;
+  border-radius: 0 100px 0 0;
+  &-container {
+    @extend .d-flex;
+    @extend .max-w;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media(tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 30px 0 0 0;
+    }
+  }
+
+  &-logo {
+    margin: 50px auto;
+    @include media(tablet) {
+      margin: 0 auto;
+    }
+    a {
+      margin: 0 auto;
+      width: fit-content;
+      display: block;
+    }
+  }
+  &-category-product,
+  &-category-company,
+  &-category-connect {
+    margin: 0 auto 30px;
+    .item-navmenu-name {
+      @extend .name-category;
+      color: $color-text;
+    }
+    .subitems-navmenu {
+      @extend .items-of-category;
+      .subitem-navmenu {
+        a {
+          color: $color-text-gray;
+          font-size: 18px;
+          @extend .transition;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .subitem-navmenu:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

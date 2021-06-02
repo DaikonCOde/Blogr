@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-secondary;
+}
+
+.hero {
+  background: $gradient-cta;
+  @extend .style-content;
+  position: relative;
+  border-radius: 0 0 0 100px;
+  overflow: hidden;
+  &-container {
+    @extend .max-w;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -250px;
+    left: -80px;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/bg-pattern-intro.svg") no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    height: 1200px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: 700px;
+    @include media(desktop-s) {
+      width: 993px;
+    }
+  }
+}
+
+.header__site {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &--logo {
+    width: fit-content;
+    a {
+      text-decoration: none;
+      img {
+        width: fit-content;
+      }
+    }
+  }
+  &--nav-mobile {
+    width: 30px;
+    height: 18px;
+    @include media(desktop-s) {
+      display: none;
+      visibility: hidden;
+    }
+    span {
+      background: url("../assets/icon-hamburger.svg") no-repeat center;
+      background-size: contain;
+      display: block;
+      width: inherit;
+      height: inherit;
+      transition: all 0.3s linear;
+    }
+    .nav-active {
+      background: url("../assets/icon-close.svg") no-repeat center;
+    }
+  }
+  &--nav-tablet {
+    display: none;
+    width: 100%;
+    margin: 0 0 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    @include media(desktop-s) {
+      display: flex;
+    }
+    .nav-menu {
+      @extend .d-flex;
+      &-category {
+        position: relative;
+        margin: 0 20px;
+        span {
+          @extend .name-category;
+          @extend .transition;
+          margin: 0;
+          color: $color-text-gray;
+          &::before {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: calc(50% - 6px);
+            background: url("../assets/icon-arrow-light.svg") no-repeat center;
+            background-size: contain;
+            width: 12px;
+            height: 12px;
+            @extend .transition;
+          }
+        }
+        ul {
+          position: absolute;
+          top: 20px;
+          padding: 20px;
+          width: 150px;
+          background: $color-text;
+          border-radius: 5px;
+          box-shadow: 0 5px 5px #00000030;
+          height: 0;
+          overflow: hidden;
+          padding: 0;
+          @extend .transition;
+          li {
+            a {
+              color: $dark-blue;
+              @extend .transition;
+              &:hover {
+                font-weight: 600;
+              }
+            }
+          }
+          li:not(:last-child) {
+            margin: 0 0 15px;
+          }
+        }
+        span:hover {
+          color: $color-text;
+          text-decoration: underline;
+        }
+        span:hover::before {
+          transform: rotate(180deg);
+        }
+        span:hover + ul,
+        ul:hover {
+          height: auto;
+          padding: 20px;
+        }
+      }
+    }
+    .nav-login {
+      @extend .d-flex;
+      .btn {
+        @extend .style-button;
+      }
+      .btn-light {
+        @extend .style-btn-light;
+        margin: 0 0 0 10px;
+      }
+      .btn-transparent {
+        @extend .style-btn-transparent;
+        border: none;
+      }
+    }
+  }
+}
+
+.section__home {
+  margin: 100px auto;
+  padding: 0 20px;
+  position: relative;
+  .container-section-home {
+    @extend .max-w;
+  }
+  &--title {
+    h1 {
+      @extend .style-title;
+      max-width: 285px;
+      margin: 0 auto;
+      @include media(desktop-s) {
+        max-width: fit-content;
+      }
+    }
+    p {
+      @extend .style-text;
+    }
+  }
+  &--cta {
+    margin: 40px auto 0;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    .btn {
+      @extend .style-button;
+    }
+    .btn-light {
+      @extend .style-btn-light;
+    }
+    .btn-transparent {
+      @extend .style-btn-transparent;
+      margin: 0 0 0 10px;
+    }
+  }
+}
