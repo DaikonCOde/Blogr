@@ -1,0 +1,29 @@
+.animation-text {
+  @extend .transition-animation;
+  @extend .is-not-visibility;
+  transform: translate(0, 100px);
+}
+.animation-image-right {
+  @extend .transition-animation;
+  @extend .is-not-visibility;
+  transform: translate(50%, 0);
+}
+
+.animation-image-left {
+  @extend .transition-animation;
+  @extend .is-not-visibility;
+  transform: translate(-40%, 0);
+}
+
+.add-animation-text {
+  @extend .is-visibility;
+  transform: translate((0, 0));
+}
+.add-animation-image-right {
+  @extend .is-visibility;
+  transform: translate((0, 0));
+}
+.add-animation-image-left {
+  @extend .is-visibility;
+  transform: translate((0, 0));
+}

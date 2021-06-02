@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
   <title>Blogr</title>
 </head>
 <body>
@@ -70,10 +71,10 @@
   <section class="design">
     <div class="design-container">
       <div class="design-header">
-        <h2>Designed of the future</h2>
+        <h2 class="animation-text animation" data-animation="add-animation-text">Designed of the future</h2>
       </div>
       <div class="design-body">
-        <div class="design-body--image">
+        <div class="design-body--image animation-image-right animation" data-animation="add-animation-image-right">
           <picture>
             <source media="(min-width: 664px )" srcset="./assets/illustration-editor-desktop.svg">
             <img src="./assets/illustration-editor-mobile.svg" alt="">
@@ -81,12 +82,12 @@
         </div>
         <div class="design-body--description">
           <div class="description-introduction">
-            <h3>Introducction an extensible editor</h3>
-            <p>Blogr feaures an exceendingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog</p>
+            <h3 class="description-introduction-title animation-text animation" data-animation="add-animation-text">Introducction an extensible editor</h3>
+            <p class="animation-text animation" data-animation="add-animation-text">Blogr feaures an exceendingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog</p>
           </div>
           <div class="description-managnent">
-            <h3>Robust content management</h3>
-            <p>Flexible content management enables users to eaily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. with this functionality, you're in full control.</p>
+            <h3 class="animation-text animation" data-animation="add-animation-text">Robust content management</h3>
+            <p class="animation-text animation" data-animation="add-animation-text">Flexible content management enables users to eaily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. with this functionality, you're in full control.</p>
           </div>
         </div>
       </div>
@@ -95,16 +96,15 @@
   </section>
   
   <section class="art">
-    <div class="art-mobiles">
+    <div class="art-mobiles animation-image-left animation" data-animation="add-animation-image-left">
       <img src="./assets/illustration-phones.svg" alt="">
     </div>
     <div class="art-container">
       <div class="art-overlay">
-        <span></span>
       </div>
       <div class="art-description">
-        <h3>State of the art Infrastructure</h3>
-        <p>With reliability and speed in mind. worldwide data centers provide the backbone for ultra-fast connectivity. this ensures your site will load instantly. no matter where your readers are, keeping your site competitive.</p>
+        <h3 class="animation-text animation" data-animation="add-animation-text">State of the art Infrastructure</h3>
+        <p class="animation-text animation" data-animation="add-animation-text">With reliability and speed in mind. worldwide data centers provide the backbone for ultra-fast connectivity. this ensures your site will load instantly. no matter where your readers are, keeping your site competitive.</p>
       </div>
     </div>
   </section>
@@ -112,7 +112,7 @@
   
   <section class="about">
     <div class="about-container">
-      <div class="about-image">
+      <div class="about-image animation-image-left animation" data-animation="add-animation-image-left">
         <figure>
           <source media="(min-width: 664px)" srcset="./assets/illustration-laptop-desktop.svg">
           <img src="./assets/illustration-laptop-mobile.svg" alt="">
@@ -120,12 +120,12 @@
       </div>
       <div class="about-description">
         <div class="about-description--features">
-          <h3>Free, open, simple</h3>
-          <p>Blogr is afreed and open source application backend by a large community of helpful develores, it supports features such as code sintax highlighting, RSS feeds, social media integration, thirs-party commenting tools, and works seamlessly with Google Analytics, The architecture is clean and is relatively easy to learn.</p>
+          <h3 class="animation-text animation" data-animation="add-animation-text">Free, open, simple</h3>
+          <p class="animation-text animation" data-animation="add-animation-text">Blogr is afreed and open source application backend by a large community of helpful develores, it supports features such as code sintax highlighting, RSS feeds, social media integration, thirs-party commenting tools, and works seamlessly with Google Analytics, The architecture is clean and is relatively easy to learn.</p>
         </div>
         <div class="about-description--tool">
-          <h3>Powerful Tooling</h3>
-          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites</p>
+          <h3 class="animation-text animation" data-animation="add-animation-text">Powerful Tooling</h3>
+          <p  class="animation-text animation" data-animation="add-animation-text">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites</p>
         </div>
       </div>
     </div>
@@ -210,5 +210,6 @@
   </div>
 
   <script src="./js/navbar.js"></script>
+  <script src="./js/observer.js"></script>
 </body>
 </html>

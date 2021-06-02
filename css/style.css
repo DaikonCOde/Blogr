@@ -115,6 +115,44 @@ a {
 .transition, .header__site--nav-tablet .nav-menu-category span, .header__site--nav-tablet .nav-menu-category span::before, .header__site--nav-tablet .nav-menu-category ul, .header__site--nav-tablet .nav-menu-category ul li a, .footer-category-product .subitems-navmenu .subitem-navmenu a, .footer-category-company .subitems-navmenu .subitem-navmenu a, .footer-category-connect .subitems-navmenu .subitem-navmenu a {
   transition: all 0.3s linear; }
 
+/* line 109, components/_components.scss */
+.transition-animation, .animation-text, .animation-image-right, .animation-image-left {
+  transition: all 0.5s linear; }
+
+/* line 113, components/_components.scss */
+.is-not-visibility, .animation-text, .animation-image-right, .animation-image-left {
+  visibility: hidden;
+  opacity: 0; }
+
+/* line 118, components/_components.scss */
+.is-visibility, .add-animation-text, .add-animation-image-right, .add-animation-image-left {
+  visibility: visible;
+  opacity: 1; }
+
+/* line 1, components/_animation.scss */
+.animation-text {
+  transform: translate(0, 100px); }
+
+/* line 6, components/_animation.scss */
+.animation-image-right {
+  transform: translate(50%, 0); }
+
+/* line 12, components/_animation.scss */
+.animation-image-left {
+  transform: translate(-40%, 0); }
+
+/* line 18, components/_animation.scss */
+.add-animation-text {
+  transform: translate(0, 0); }
+
+/* line 22, components/_animation.scss */
+.add-animation-image-right {
+  transform: translate(0, 0); }
+
+/* line 26, components/_animation.scss */
+.add-animation-image-left {
+  transform: translate(0, 0); }
+
 /* line 1, components/_navmenu.scss */
 .aside-navmenu {
   position: absolute;

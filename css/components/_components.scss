@@ -105,3 +105,17 @@ a {
 .transition {
   transition: all 0.3s linear;
 }
+
+.transition-animation {
+  transition: all 0.5s linear;
+}
+
+.is-not-visibility {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.is-visibility {
+  visibility: visible;
+  opacity: 1;
+}
